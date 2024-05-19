@@ -62,7 +62,7 @@ gap:40px;
 
 .footer .footer-start,
 .footer .footer-end{
-  width:calc((100%-40px)/2)
+  width:calc((100% - 40px)/2);
 }
 .footer .footer-start .logo{
 align-items: center;
@@ -83,7 +83,7 @@ align-items: center;
   width:35px;
 }
 .footer .footer-start .logo a{
- font-size: 14px;;
+ font-size: 14px;
 }
 .footer .footer-start p{
   color: #f4f4f4;
@@ -111,5 +111,5 @@ align-items: center;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 10px;
+  gap:10px;
 }
