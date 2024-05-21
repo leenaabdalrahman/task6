@@ -1,5 +1,5 @@
 @import './base.css';
-
+/*start header*/
 .header{
   position: sticky;
   top: 0;
@@ -7,6 +7,10 @@
   flex-wrap: wrap;
   box-shadow: 0px 4px 4px 0px #00000040;
   padding: 20px 0;
+  background-color: #ffffff;
+}
+.header .container .row{
+  background-color: #fff;
 }
 .header .logo{
   display: flex;
@@ -48,6 +52,76 @@
     display: none;
   }
 }
+/*end header*/
+/* start testimonials*/
+.testimonials{
+  text-align: center;
+  padding: 40px 0;
+
+}
+.testimonials .row{
+  gap: 40px;
+}
+.testimonials h2{
+  margin-bottom: 20px;
+}
+.testimonial{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap:20px;
+  width: calc(( 100% - 40px ) / 2);
+  align-items: flex-start;
+  box-shadow: 0px 6.34px 6.34px 0px #0000001A;
+  padding: 20px;
+  position: relative;
+}
+.testimonial:after{
+  content: ' ';
+  border-top: 40px solid #a3a3a3 ;
+  border-left: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  position: absolute;
+  top:0;
+  right:0;
+}
+.testimonial .user-info img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.testimonial .user-info{
+  display: flex;
+  gap:15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.testimonial .user-info .user-data{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap:10px;
+  align-items: flex-start;
+
+}
+.testimonial .user-info .user-data span{
+  font-size:12px;
+  color: #969696;
+}
+.testimonial .rating{
+  display: flex;
+  flex-wrap: wrap;
+ gap:7;
+}
+.testimonial q{
+  color: #646464;
+  font-size: 13px;
+}
+.testimonial blockquote p{
+  display: inline-block;
+  padding: 0 10px;
+}
+/*start footer*/
 .footer{
   background-color: #393E46;
   color:#fff;
@@ -113,3 +187,4 @@ align-items: center;
   flex-wrap: wrap;
   gap:10px;
 }
+/*end footer*/
