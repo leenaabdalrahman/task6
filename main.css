@@ -9,9 +9,6 @@
   padding: 20px 0;
   background-color: #ffffff;
 }
-.header .container .row{
-  background-color: #fff;
-}
 .header .logo{
   display: flex;
   align-items:center;
