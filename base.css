@@ -30,6 +30,19 @@ a{
 ul{
   list-style: none;
 }
+h1{
+  font-size: 50px;
+}
+h2{
+  font-size: 48px;
+  font-family: var(--maincolor);
+}
 .active{
   font-weight: 900;
+}
+@media (max-width : 768px){
+  .container {
+    width: 100%;
+    padding-inline: 10px ;
+  }
 }

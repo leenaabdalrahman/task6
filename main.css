@@ -46,14 +46,677 @@
   background-color: var(--maincolor);
   color:#fff;
 }
+.header .container button {
+  background-color: var(--maincolor);
+  border: solid 1px var(--maincolor);
+}
+.header .container .menu button{
+  display: none;
+}
 
-@media (max-width:992px){
-
+@media (max-width: 970px){
   .nav{
     display: none;
   }
+   .header .container .menu button{
+    display: block;
+  }
+ /* .begins .row{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }*/
+  .begins .container .row{
+    display: flex;
+    align-items: flex-start;
+  }
+  section.begins .begins-design img{
+    width: 300px;
+    height: 300px;
+  }
+  section.begins .container .row .begins-info h1 {
+    font-size: 40px;
+  }
+  .begins .container .row .begins-info p{
+    font-size: 15px;
+  }
+  .Advantages .row{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .Advantages .row .Advantage-info{
+    width: 100%;
+  }
+  .Advantage-details .Advantage-card p{
+    font-size: 60%;
+  }
+  .Advantage-details .Advantage .Advantage-card  .Professional-img{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Advantage-details .Advantage-card .Professional-img img{
+    width: 30%;
+    height: 30%;
+  }
+  .users .container .row{
+    display: flex;
+  }
+  .design .womanPhoto img{
+    width: 300px;
+    height: 300px;
+  }
+   .users .selected-course .details h2{
+    font-size: 30px;
+   }
+   .users .selected-course .statistic .row{
+    font-size: 15px;
+    gap: 5px;
+   }
+   .users {
+    height: 450px;
+   }
+   .courses .course-info span:first-of-type{
+    padding: 5px;
+    font-size: 8px;
+   }
+   .courses .course-info span:last-of-type{
+    font-size: 10px;
+   }
+   .courses .course-details {
+    font-size: 10px;
+   }
+   .courses .course-description h2{
+    font-size: 30px;
+   }
+   .testimonials h2{
+    font-size: 30px;
+   }
+   .footer .container .row .footer-end .row .footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+   }
+
+   .footer .container .row .footer-end .row .footer-item h2{
+    font-size: 20px;
+   }
+   .footer .container .row .footer-end .row .footer-item nav ul li a{
+    font-size: 10px;
+   }
+   .footer .container .row .footer-start,
+.footer .container .row .footer-end{
+  width:100%;
+}
+.footer .container .row .footer-end .row .footer-item{
+  width: calc((100% - 20px) / 2);
+}
+.footer .container .row .footer-end .row{
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+}
+@media (max-width: 768px){
+  .nav{
+    display: none;
+  }
+   .header .container .menu button{
+    display: block;
+    padding: 5px;
+  }
+  .header .container .auth a{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    font-size: 15px;
+  }
+  .begins .row{
+    display: flex;
+    flex-direction: column;
+  }
+  .begins .row .begins-info{
+    width: 100%;
+  }
+  .begins .row .begins-info h1,span,a,p{
+    font-size: 80%;
+  }
+  .begins .begins-info{
+    position: relative;
+    z-index: 8;
+  }
+  .begins .begins-design{
+    position: absolute;
+  }
+  .begins .begins-design{
+    position: absolute;
+    top: 100px;
+  }
+  .begins .begins-design img{
+    opacity: 0.5;
+    filter: brightness(80%);
+  }
+  .Advantages .Advantage-details .Advantage .Advantage-card{
+    background-color: var(--maincolor);
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    border-radius: 5%;
+    padding: 20px 10px;
+    gap: 5px;
+  }
+  .courses .container .row{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .courses .container .row .course-items{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 30px;
+  }
+  .courses .container .row .course-items .course{
+    width: calc((100% - 20px) / 2);
+    height: calc((100% - 20px) / 2);
+  }
+
+  .courses .container .row .course-items .course .course-card img{
+    height: 60%;
+  }
+  .courses .container .row .course-items .course .course-details{
+    display: flex;
+    flex-direction: row;
+  }
+  .courses .container .row .course-items .course .course-details .row:first-of-type{
+    width: calc((100% - 20px) / 2);
+  }
+  .courses .container .row .course-items .course .course-details .row:last-of-type{
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 20px) / 2);
+    align-items: flex-end;
+  }
+  .courses .container .row .course-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+  }
+  .users {
+    height: 60%;
+  }
+  .users .container .row{
+    justify-content: center;
+   text-align: center;
+   align-items: center;
+  }
+  .users .container .row .design{
+   position: relative;
+   opacity: 0.5;
+
+  }
+  .users .container .row .selected-course{
+    position: absolute;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .users .container .row .selected-course .details{
+    gap: 20px;
+  }
+  .Advantages .container .Advantage-details {
+    width: 100%;
+  }
+  .Advantages .container .Advantage-details .row .Advantage{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .Advantages .container .Advantage-details .row .Advantage .Advantage-card{
+    width: 100%;
+  }
+  .users .selected-course .statistic .row{
+      font-size: 10px;
+      gap: 5px;
+     }
+
+}
+@media (max-width:367px){
+  .header .container .auth {
+    display: none;
+  }
+  .begins .row .begins-info{
+    width: 120%;
+  }
+  section.begins .container .row .begins-info h1 {
+    font-size: 30px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  .Advantage-details .Advantage .Advantage-card  .Professional-img{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Advantage-details .Advantage .Advantage-card h3{
+    font-size: 15px;
+  }
+  .Advantage-details .Advantage-card .Professional-img img{
+    width: 10%;
+    height: 10%;
+  }
+  .courses .container .course-items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .courses .container .row .course-items .course{
+    width: 100%;
+  }
+  .users .selected-course .statistic .row{
+      font-size: 10px;
+      justify-content: center;
+     }
+  section.users{
+    height: 700px;
+  }
+
 }
 /*end header*/
+/*stat begins*/
+.begins{
+  background: #F5F5F5;
+
+}
+.begins .row{
+  padding: 60px;
+}
+
+.begins .begins-design{
+  width: calc((100% - 20px) / 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.begins .begins-design img{
+  width: 400px;
+  height: 400px;
+}
+.begins .begins-info{
+  width: calc((100% - 20px) / 2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+.begins .begins-info span{
+  font-family: var(--subFont);
+  color: var(--maincolor);
+}
+.begins .begins-info h1{
+  font-family: var(--mainFont);
+  color: black;
+  font-size: 70px;
+  font-weight: 700;
+}
+.begins .begins-info h1 span{
+  color: var(--maincolor);
+}
+.begins .begins-info span .second{
+  font-weight: 700;
+}
+.begins .begins-info .button{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:20px;
+  align-items: flex-start;
+}
+.begins .begins-info .button a{
+  font-family: var(--subFont);
+  border-radius: 5px;
+}
+.begins .begins-info .button a:first-of-type{
+  border: 1px solid var(--maincolor);
+  color: var(--maincolor);
+  background-color: var(--maincolor);
+  padding:10px 30px;
+  color:#fff;
+}
+.begins .begins-info .button a:last-of-type{
+  color: #000;
+  display: flex;
+  gap:10px;
+  align-items: center;
+}
+
+.begins .begins-info .button a img:last-of-type{
+  height: 40px;
+  width: 40px;
+}
+/*end begins*/
+/*start advantges*/
+.Advantages .container{
+padding: 40px;
+}
+.Advantages .container .row{
+  gap: 10px;
+}
+.Advantages .Advantage-info{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: calc((100% - 20px) / 2);
+  gap: 10px;
+
+}
+.Advantage{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  flex-grow: 1;
+}
+.Advantages .Advantage-info .row{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  top: 0;
+  left: 0;
+  gap: 20px 0px;
+}
+.Advantages .Advantage-details{
+  width: calc((100% - 20px) / 2);
+  display: flex;
+  flex-wrap: wrap;
+}
+.Advantages .Advantage-card{
+  background-color: var(--maincolor);
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  border-radius: 5%;
+  padding: 30px 20px;
+  gap: 10px;
+  flex-grow: 1;
+}
+.Advantage-details .Advantage-card{
+  color: #fff;
+}
+.Advantage-details .Advantage-card .Professional-img{
+  background-color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Advantage-details .Advantage-card .Professional-img img{
+  width: 60%;
+  height: 60%;
+}
+.Advantages .Advantage-info span{
+  color: var(--maincolor);
+  font-family: var(--subFont);
+}
+.Advantages .Advantage-info h2{
+  white-space: pre-line;
+  font-family: var(--mainFont);
+}
+.Advantages .Advantage-info p{
+  font-family: var(--mainFont);
+}
+.Advantages .Advantage-details{
+  flex: 2;
+  position: relative;
+  top: 50px;
+}
+.Advantages .Advantage-details .row{
+  flex-direction: column;
+}
+
+.Advantage{
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+
+}
+.Advantage-details .next-button{
+  display: flex;
+  width: 70%;
+  justify-content: flex-end;
+  padding: 10px;
+  gap: 10px;
+}
+.Advantages .Advantage-details .next-button img{
+  width: 40px;
+  height: 40px;
+}
+/*end advantages*/
+
+/*start users*/
+.users{
+  background: linear-gradient(180deg, #545BE8 0%, #272DB0 100%);
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+.user .container .row{
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.design{
+  width: calc((100% - 20px) / 2);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+}
+.selected-course{
+  width: calc((100% - 20px) / 2);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.womanPhoto{
+  display: flex;
+  width: 500px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.womanPhoto img{
+  width: 400px;
+  height: 400px;
+}
+.selected-course .details{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.selected-course .details{
+  gap: 10px;
+}
+.selected-course .details span{
+  color: #F0C932;
+  font-family: var(--subFont);
+}
+.selected-course .details h2{
+  font-family: var(--mainFont);
+  color: #fff;
+  font-weight: 700;
+  font-size: 40px;
+  white-space: pre-line;
+}
+.selected-course .details p{
+  color: #fff;
+  font-family: var(--mainFont);
+}
+.selected-course .statistic{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+.selected-course .statistic .row{
+  display: flex;
+  color: #fff;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  top: 0;
+}
+.selected-course .statistic h3{
+  color: #F0C932;
+  font-family: var(--subFont);
+}
+.selected-course .statistic .views ,.selected-course .statistic .user,.selected-course .statistic .courses{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--subFont);
+}
+/*end users*/
+
+/*start course*/
+.courses{
+  padding: 40px 0;
+}
+.courses .row{
+  gap: 30px;
+  align-items: flex-start;
+}
+.course img{
+  width: 100%;
+}
+.course-items{
+  display: flex;
+  flex-wrap: wrap;
+  width: calc((100% - 30px) / 2 );
+  gap: 20px;
+  flex-grow: 1;
+}
+.course{
+  width: calc(( 100% - 20px ) / 2 );
+  box-shadow: 0px 7.44px 7.44px 0px #0000003c;
+  font-family: var(--mainFont);
+  border-radius: 10px ;
+  flex-grow: 1;
+}
+.course-card{
+  position: relative;
+}
+
+.course-details{
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-wrap: wrap;
+
+}
+.course-details .row{
+  justify-content: space-around;
+  font-family: var(--mainFont);
+}
+.course-details .row h3{
+  font-weight: 700;
+}
+.course-details .row:first-of-type span{
+  color: var(--maincolor);
+}
+
+.course-details .row:last-of-type{
+  justify-content: flex-start;
+  color: #969696;
+}
+.course-card img{
+  filter: brightness(60%);
+}
+.course-info{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding:10px;
+  color: #fff;
+}
+.course-info span:first-of-type{
+  background-color:var(--maincolor);
+  padding:10px;
+}
+.course-info span:last-of-type{
+  color: #fff;
+  font-size: 20px;
+  align-self: flex-end;
+  font-family: var(--mainFont);
+font-weight: 700;
+
+}
+.course-description{
+  width:calc((100% - 30px) / 2);
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 30px 0;
+}
+.course-description span{
+font-family: var(--subFont);
+color: var(--maincolor);
+font-size: 20px;
+font-weight: 400;
+line-height: 8.97px;
+text-align: left;
+
+}
+.course-description h2{
+font-family: var(--mainFont);
+font-size: 60px;
+}
+.course-description p{
+  font-family: var(--mainFont);
+}
+.course-description a{
+  border: 1px solid var(--maincolor);
+  background-color: var(--maincolor);
+  color: #fff;
+  width: 120px;
+  font-family: var(--subFont);
+  padding:10px 30px;
+  border-radius: 5px;
+}
+/*end course*/
 /* start testimonials*/
 .testimonials{
   text-align: center;
@@ -71,12 +734,14 @@
   flex-wrap: wrap;
   flex-direction: column;
   gap:20px;
-  width: calc(( 100% - 40px ) / 2);
+  flex-basis: 400px;
   align-items: flex-start;
   box-shadow: 0px 6.34px 6.34px 0px #0000001A;
   padding: 20px;
   position: relative;
+  flex-grow: 1;
 }
+
 .testimonial:after{
   content: ' ';
   border-top: 40px solid #a3a3a3 ;
@@ -148,6 +813,7 @@ align-items: center;
   flex-direction: column;
   gap:30px;
   flex-wrap:wrap;
+  flex-grow: 1;
 }
 .footer .footer-start .logo{
   display: flex;
