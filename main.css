@@ -52,6 +52,7 @@
 }
 .header .container .menu button{
   display: none;
+  border-radius: 10%;
 }
 
 @media (max-width: 970px){
@@ -200,7 +201,7 @@
     top: 100px;
   }
   .begins .begins-design img{
-    opacity: 0.5;
+    opacity: 0.4;
     filter: brightness(80%);
   }
   .Advantages .Advantage-details .Advantage .Advantage-card{
@@ -208,7 +209,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 60%;
-    border-radius: 5%;
+    border-radius: 0%;
     padding: 20px 10px;
     gap: 5px;
   }
@@ -261,7 +262,7 @@
   }
   .users .container .row .design{
    position: relative;
-   opacity: 0.5;
+   opacity: 0.4;
 
   }
   .users .container .row .selected-course{
@@ -559,8 +560,6 @@ padding: 40px;
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
-}
-.selected-course .details{
   gap: 10px;
 }
 .selected-course .details span{
@@ -687,7 +686,6 @@ font-weight: 700;
 .course-description{
   width:calc((100% - 30px) / 2);
   display: flex;
-
   flex-wrap: wrap;
   gap: 30px 0;
 }
